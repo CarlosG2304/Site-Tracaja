@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="content">
+    <div class="left-side">
+      <div class="address details">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="topic">Endereço</div>
+        <div class="text-one">Paragominass PA</div>
+        <div class="text-two">Rua Cupuaçu 188. Bairro Tiao Mineiro</div>
+      </div>
+      <div class="phone details">
+        <i class="fas fa-phone-alt"></i>
+        <div class="topic">Telefone</div>
+        <div class="text-one">91 991515320</div>
+        <div class="text-two">+00 00 1234 5678</div>
+      </div>
+      <div class="email details">
+        <i class="fas fa-envelope"></i>
+        <div class="topic">Email</div>
+        <div class="text-one">tracaja@tracaja.com</div>
+        <div class="text-two"></div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="topic-text">Envie sua mensagem</div>
+      <p>
+        Se quiser nos mandar alguma mensagem mande aqui
+      </p>
+      <form #contatoForm="ngForm" action="enviarEmail()">
+        <div class="input-box">
+          <input type="text" [(ngModel)]="nome" name="nome" required #contatoName="ngModel"
+            placeholder="Digite seu nome" />
+
+        </div>
+        <div class="input-box">
+          <input type="text" [(ngModel)]="email" name="email" required #contatoEmail="ngModel"
+            placeholder="Digite seu email" />
+        </div>
+        <div class="input-box message-box">
+          <textarea [(ngModel)]="mensagem" name="mensagem" required #contatoMensagem="ngModel"
+            placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <button pButton pRipple type="submit" label="Enviar" class="p-button-raised p-button-warning" icon="pi pi-user"
+          [disabled]="contatoForm.invalid!" (click)="enviarEmail()"></button>
+        <p-toast position='bottom-right'></p-toast>
+      </form>
+    </div>
+  </div>
+</div>

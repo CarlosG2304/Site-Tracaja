@@ -1,0 +1,51 @@
+<section class="layout-chamada">
+  <div class="container">
+
+    <div class="chamada">
+      <h1 class="chamada__titulo scalein animation-duration-1000 animation-iteration-1">Seja bem vindo ao site da
+        Tracaja!</h1>
+      <p class="chamada__subtitulo scalein animation-duration-1000 animation-iteration-1">A Tracajá foi fundada
+        para atendê-lo em suas necessidades dentro dos diversos
+        segmentos em que atua.</p>
+    </div>
+  </div>
+</section>
+
+
+<div [ngStyle]="{backgroundColor:'var(--gray-300)'}">
+  <div class="fadeinleft animation-duration-1000 animation-iteration-1">
+    <div class="grid pt-5">
+      <div class="col ml-6">
+
+        <p-card class="text-center" header="Venda"
+          [style]="{'width': '25rem','height':'15rem', 'margin-bottom': '1.5em'}">
+
+          <p> Intermediação e venda de imóveis rurais,
+            Reflorestamento, Silvicultura dentre outros</p>
+          <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search"></p-button>
+        </p-card>
+
+
+      </div>
+
+
+      <div class="col">
+
+        <p-card class="text-center" header="Mercado" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+
+          <p> Mercado nacional e internacional <br> em madeira e subprodutos <br> - serrada, decks, dentre outros;</p>
+          <p-button class="" label="Leia Mais" icon="pi pi-search"></p-button>
+        </p-card>
+      </div>
+      <div class="col">
+
+        <p-card class="text-center" header="Locação"
+          [style]="{'width': '25rem','height':'15rem', 'margin-bottom': '1.0.5em'}">
+
+          <p>Locação de tratores de esteiras, escavadeiras hidráulicas, retroescavadeiras, etc.</p>
+          <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search"></p-button>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>
