@@ -19,6 +19,9 @@ import { HistoriaComponent } from './historia/historia.component';
 import { AgroComponent } from './agro/agro.component';
 import { ImageModule } from 'primeng/image';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +43,9 @@ import { ProdutosComponent } from './produtos/produtos.component';
     AppRoutingModule,
     HttpClientModule,
     ToastModule,
-    ImageModule
+    ImageModule,
+    SidebarModule,
+    ToggleButtonModule
   ],
   providers: [MailService, MessageService],
   bootstrap: [AppComponent]

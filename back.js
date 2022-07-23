@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer')
 const cors = require('cors');
+const { credeciais } = require('./.env')
 
 const app = express();
 
@@ -17,8 +18,8 @@ app.use(bodyParser.json());
 let transporter
 const environment = {
   production: false,
-  email: 'site@tracaja.com.br',
-  pass: 'siteTraca749*'
+  email: credeciais.email,
+  pass: credeciais.password
 };
 
 transporter = nodemailer.createTransport({

@@ -14,5 +14,28 @@
       <li><a [routerLink]="['produtos']" routerLinkActive="ativo">Produtos</a></li>
       <li><a [routerLink]="['/contato']" routerLinkActive="ativo">Contato</a></li>
     </ul>
+
+
   </nav>
+
+  <img class="toggle-button"
+    src="https://raw.githubusercontent.com/CarlosG2304/Faculdade-Intenacional-Do-Para-Projeto/master/View/imgs/menu-aberto.png"
+    (click)="alternador()">
 </header>
+
+
+<p-sidebar [(visible)]="display" position="right">
+  <ul>
+    <li class="mb-2"><a class="text-4xl" [routerLink]="['home']" routerLinkActive="ativo">Home</a></li>
+    <!-- barra de navegação menu lateral -->
+    <li class="mb-2"><a class="text-4xl" [routerLink]="['historia']" routerLinkActive="ativo">Historia</a></li>
+    <!-- barra de navegação menu lateral -->
+    <li class="mb-2"><a class="text-4xl" [routerLink]="['agro']" routerLinkActive="ativo">Serviços</a></li>
+    <!-- barra de navegação menu lateral -->
+    <li class="mb-2"><a class="text-4xl" [routerLink]="['produtos']" routerLinkActive="ativo">Produtos</a></li>
+    <li class="mb-2"><a class="text-4xl" [routerLink]="['contato']" routerLinkActive="ativo">Contato</a></li>
+  </ul>
+
+
+
+</p-sidebar>

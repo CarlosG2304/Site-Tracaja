@@ -15,35 +15,17 @@
 <div [ngStyle]="{backgroundColor:'var(--gray-300)'}">
   <div class="fadeinleft animation-duration-1000 animation-iteration-1">
     <div class="grid pt-5">
-      <div class="col ml-6">
+      <div *ngFor="let card of cards" class="col ml-6">
 
-        <p-card class="text-center" header="Venda"
+        <p-card class="text-center" [header]="card.header"
           [style]="{'width': '25rem','height':'15rem', 'margin-bottom': '1.5em'}">
 
-          <p> Intermediação e venda de imóveis rurais,
-            Reflorestamento, Silvicultura dentre outros</p>
-          <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search"></p-button>
-        </p-card>
+          <p> {{card.text}}</p>
 
-
-      </div>
-
-
-      <div class="col">
-
-        <p-card class="text-center" header="Mercado" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
-
-          <p> Mercado nacional e internacional <br> em madeira e subprodutos <br> - serrada, decks, dentre outros;</p>
-          <p-button class="" label="Leia Mais" icon="pi pi-search"></p-button>
-        </p-card>
-      </div>
-      <div class="col">
-
-        <p-card class="text-center" header="Locação"
-          [style]="{'width': '25rem','height':'15rem', 'margin-bottom': '1.0.5em'}">
-
-          <p>Locação de tratores de esteiras, escavadeiras hidráulicas, retroescavadeiras, etc.</p>
-          <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search"></p-button>
+          <a [routerLink]="[card.rota]">
+            <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search">
+            </p-button>
+          </a>
         </p-card>
       </div>
     </div>

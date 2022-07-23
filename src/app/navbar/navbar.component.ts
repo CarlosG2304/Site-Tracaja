@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  display = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  alternador() {
+    this.display = true
   }
 
 }
