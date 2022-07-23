@@ -12,12 +12,13 @@ var corsOptions = {
   optionsSuccessStatus: 200
 }
 
+app.use(express.static('dist/tracaja'))
+
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 let transporter
 const environment = {
-  production: false,
   email: credeciais.email,
   pass: credeciais.password
 };

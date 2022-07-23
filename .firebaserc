@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tracaja": {
+      "hosting": {
+        "Tracaja": [
+          "tracaja"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tracaja"
+  }
+}
