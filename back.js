@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 
 let transporter
 const environment = {
-  email: credeciais.email,
-  pass: credeciais.password
+  email: process.env.email,
+  pass: process.env.password
 };
 
 transporter = nodemailer.createTransport({
