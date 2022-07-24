@@ -17,6 +17,9 @@ app.use(express.static('dist/tracaja'))
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
+app.get('/*', function (req, res) {
+  res.sendFile('dist/tracaja');
+});
 let transporter
 const environment = {
   email: process.env.email,
