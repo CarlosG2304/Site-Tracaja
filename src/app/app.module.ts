@@ -21,6 +21,7 @@ import { ImageModule } from 'primeng/image';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     ToastModule,
     ImageModule,
     SidebarModule,
-    ToggleButtonModule
+    ToggleButtonModule,
+    ProgressSpinnerModule
   ],
   providers: [MailService, MessageService],
   bootstrap: [AppComponent]
