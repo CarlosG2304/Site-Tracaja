@@ -56,6 +56,6 @@ app.post('/enviar', (req, res) => {
 
 
 
-app.listen(3100, () => {
+app.listen(process.env.PORT || 3100, () => {
   console.log('Server Started!');
 });
