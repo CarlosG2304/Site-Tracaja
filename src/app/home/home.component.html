@@ -13,21 +13,20 @@
 
 
 <div [ngStyle]="{backgroundColor:'var(--gray-300)'}">
-  <div class="fadeinleft animation-duration-1000 animation-iteration-1">
-    <div class="grid md:pt-5 m-auto">
-      <div *ngFor="let card of cards" class="col   md:ml-6">
 
-        <p-card class="text-center" [header]="card.header"
-          [style]="{'width': '25rem','height':'15rem', 'margin-bottom': '1.5em'}">
+  <div class="grid centro pt-5 fadeinleft animation-duration-1000 animation-iteration-1">
+    <div *ngFor="let card of cards" class="col    md:ml-6">
 
-          <p> {{card.text}}</p>
+      <p-card class="text-center  centro" [header]="card.header"
+        [style]="{'width': '25rem','height':'15rem', 'margin-bottom': '1.5em'}">
 
-          <a [routerLink]="[card.rota]">
-            <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search">
-            </p-button>
-          </a>
-        </p-card>
-      </div>
+        <p> {{card.text}}</p>
+
+        <a [routerLink]="[card.rota]">
+          <p-button [style]="{'margin-top': '1em'}" label="Leia Mais" icon="pi pi-search">
+          </p-button>
+        </a>
+      </p-card>
     </div>
   </div>
 </div>

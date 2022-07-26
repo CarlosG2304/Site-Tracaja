@@ -32,6 +32,7 @@
 
       font-size: 2.2rem;
     }
+
  }
 
 .layout-chamada {
@@ -40,3 +41,14 @@ padding: 80px 0;
 background-color: #7ab55c;
 }
 
+@media(max-width:920px) and (min-width:500px) {
+  .centro{
+    margin-left: 18%;
+   }
+}
+
+@media(max-width:500px){
+  .centro{
+    margin:auto;
+   }
+}
