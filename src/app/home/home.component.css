@@ -47,7 +47,7 @@ background-color: #7ab55c;
    }
 }
 
-@media(max-width:500px){
+@media(max-width:500px)  {
   .centro{
     margin:auto;
    }
